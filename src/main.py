@@ -23,6 +23,9 @@ def main():
     cell5.has_bottom_wall = False
     cell5.draw()
 
+    cell1.draw_move(cell2)
+    cell2.draw_move(cell3, undo = True)
+
     win.wait_for_close()
 
 if __name__ == "__main__":
